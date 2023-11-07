@@ -1,0 +1,33 @@
+body {
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='20' height='40' patternTransform='scale(4) rotate(100)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(44,100%,50%,1)'/><path d='M0 20v20h20V20zm10.135 4.9l1.342 3.579 3.845.312-2.996 2.506.897 3.8-3.268-2.056L6.736 35.1l.985-3.848-3.043-2.504 3.935-.18z'  stroke-width='1' stroke='none' fill='hsla(20,100%,50%,1)'/><path d='M0 0v20h20V0zm10.135 4.9l1.342 3.579 3.845.312-2.996 2.506.897 3.8-3.268-2.056L6.736 15.1l.985-3.848-3.043-2.504 3.935-.18z'  stroke-width='1' stroke='none' fill='hsla(340,100%,50%,1)'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+    /*background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='150' height='150' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)'/><path d='M150 15.2H0V6.56h150zm0 12.4v1.56H0V27.6zm0 28.37v6.6H0v-6.6zm0 39.24v2.33H0v-2.33zm0 22.54v.78H0v-.78zm0 13.21v8.16H0v-8.16zm0 10.1v1.17H0v-1.17z'  stroke-width='1' stroke='none' fill='hsla(258.5,59.4%,59.4%,1)'/><path d='M150 50.53H0v-7.39h150zm0-34.58v.77H0v-.77zm0 15.54v3.88H0V31.5zm0 33.8v1.17H0v-1.17zm0 34.2v9.32H0V99.5zm0 27.2v2.72H0v-2.72z'  stroke-width='1' stroke='none' fill='hsla(339.6,82.2%,51.6%,1)'/><path d='M150 77.73H0v-5.05h150zm0-72.66v1.16H0V5.07Zm0 13.98v4.28H0v-4.28zm0 100.25v3.11H0v-3.1zm0 27.2v3.5H0v-3.5z'  stroke-width='1' stroke='none' fill='hsla(198.7,97.6%,48.4%,1)'/><path d='M150 40.42H0v-1.16h150zm0-37.3V4.3H0V3.12Zm0 27.2v.4H0v-.4Zm0 20.98v2.34H0V51.3zm0 31.42v9.32H0v-9.32zm0 29.2v3.5H0v-3.5zm0 13.21v.39H0v-.39zm0 19.04v1.17H0v-1.17z'  stroke-width='1' stroke='none' fill='hsla(47,80.9%,61%,1)'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,-32)' fill='url(%23a)'/></svg>");
+*/
+}
+h1 {
+    font-size: 90px;
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+    text-shadow: 5px 2px black;
+}
+
+.winner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    width: 40%;
+}
+
+.image {
+    border: 10px solid whitesmoke;
+}
+
+#replayImg {
+    display: block;
+    margin-left: auto;
+    margin-top: 15px;
+    margin-right: auto;
+    height: 100px;
+    width: 100px;
+}

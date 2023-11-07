@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who's Dad Joke is Better?</title>
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class ="heading">Which Dad has better Humor?</h1>
+    
+    <div class="container">
+        <div class="card-deck">
+            <div class="card"">
+                <form id = "dad1" action = "/game" method = "POST">
+                    <input type="hidden" name="winner" value="dad1">
+                    <button class="dad1btn" type="submit">
+                        <img class="card-img-top dad1" src="images/dad1.jpg" alt="Card image cap">
+                    </button>
+                    <div class="card-body">
+                        <p class="card-text"><%= dadjoke1 %></p>
+                    </div>
+                </form>
+            </div>
+            <div class="card">
+                <form id = "dad2" action = "/game" method = "post">
+                    <input type="hidden" name="winner" value="dad2">
+                    <button class="dad2btn" type="submit">
+                        <img class="card-img-top dad2" src="images/dad2.jpg" alt="Card image cap">
+                    </button>
+                    <div class="card-body">
+                        <p class="card-text"><%= dadjoke2 %></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="radioBtn" id="radioBtn">
+            <div class ="scoreBoard">
+                <% for (var i =1; i<=5; i++) {%>
+                    <input type="radio" name = "radio_1<%= i %>" id = "radio_1<%= i%>">
+                <% } %>
+
+            </div>
+            <div class="scoreBoard">
+                <% for (var i =1; i<=5; i++) {%>
+                    <input type="radio" name = "radio_2<%= i %>" id = "radio_2<%= i%>">
+                <% } %>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        const form1 = document.getElementById ("dad1");
+        const form2 = document.getElementById ("dad2");
+
+        function updateScore (board, score) {
+
+            for (var i = 1; i<=score; i++) {
+                var btn = "radio_" + board + "" +i;
+                console.log(btn);
+                document.getElementById(btn).checked=true;
+            }
+        }
+        
+        form1.addEventListener("submit", updateScore(1,'<%=dad1score%>'));
+        form2.addEventListener("submit", updateScore(2,'<%=dad2score%>'));
+
+    </script>
+
+</body>
+</html>

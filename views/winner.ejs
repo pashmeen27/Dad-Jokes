@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which Dad has better Humor?</title>
+    <link rel="stylesheet" href="./styles/winner.css" >
+</head>
+<body>
+    <h1>DAD OF ALL DADS!</h1>
+    <div class="winner">
+        <img class="image" src="images/<%= winner%>.jpg" alt="Dad 1 won!">
+    </div>
+    <div class="replay">
+        <img id="replayImg" src="./images/replay.png">
+    </div>
+
+    <script>
+        const btn = document.getElementById("replayImg");
+
+        btn.addEventListener("click", function () {
+            window.location.replace("/");
+        });
+
+    </script>
+</body>
+</html>
